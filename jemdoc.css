@@ -246,6 +246,10 @@ li p, dd p {
   margin-bottom: 0.3em;
 }
 
+li{
+ font-size:15px;
+}
+
 
 ol ol {
   list-style-type: lower-alpha;
