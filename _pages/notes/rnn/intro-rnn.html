@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <meta http-equiv="refresh" content="3; url=https://rpraveenjain.github.io/" />
+    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   R. Praveen  Jain
 
 
-  | Page not found
+  | Introduction to recurrent neural networks
 
 </title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/404.html">
+<link rel="canonical" href="/_pages/notes/rnn/intro-rnn.html">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -194,17 +194,44 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
+      
+
+<div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Page not found</h1>
-    <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+    <h2 class="post-title">Introduction to recurrent neural networks</h2>
+    <h3st></h3st>
+    <p class="post-meta"></p>
   </header>
 
-  <article>
-    <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://rpraveenjain.github.io/">here</a>.</p>
+  <article class="post-content">
+    <hr>
+<h4 id="contents">Contents</h4>
+
+<h4 id="introduction">Introduction</h4>
+
+<p>In this post, a recurrent neural network in its basic form is presented for an absolute beginner such as me. Let’s try and answer the question – “What is the difference between neural networks and deep learning?”</p>
+
+<h6 id="neural-networks-and-deep-learning"><strong><em>neural networks and deep learning</em></strong></h6>
+
+<p>Neural networks or Artificial Neural Networks are set of algorithms that try to loosely emulate the biological brain. They consist of nodes or neurons interconnected with one another; each connection having an associated weight and each node having a nonlinear function called activation function. A given neural network architecture then specifies number of nodes or neurons, the interconnections with their weights, type of activation function in neurons and number of inputs and outputs.</p>
+
+<p>Deep learning is then set of algorithms used to learn the weights, given a NN architecture and training data. It also includes choices such as number of nodes, interconnections between then and number of layers, given a particular problem. This choice leads to many architectures and this post deals with a a particular form called the Recurrent Neural Networks.</p>
+
+<p>RNNs are meant for sequential data, such as time series data which have dependencies on the previous state. This is equivalent to dynamical systems which control engineers are acquainted. There exists hidden state in the cell of a NN, which is propagated to the next cell. The function of this hidden state equivalent to the function of “state” in the context of control systems.</p>
+
+<p>Makes me wonder if RNN’s can be used in conjunction with state space models?</p>
+
+<h4 id="references">References</h4>
+
+<ol>
+  <li>Andrej Karpathy’s blog post titled <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/" target="_blank" rel="noopener noreferrer">“The Unreasonable Effectiveness of Recurrent Neural Networks”</a>
+</li>
+</ol>
 
   </article>
+
+  
 
 </div>
 

@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <meta http-equiv="refresh" content="3; url=https://rpraveenjain.github.io/" />
+    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   R. Praveen  Jain
 
 
-  | Page not found
+  | Law of Total Expectation
 
 </title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/404.html">
+<link rel="canonical" href="/_pages/notes/law-total-expectations.html">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -194,17 +194,50 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
+      
+
+<div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Page not found</h1>
-    <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+    <h2 class="post-title">Law of Total Expectation</h2>
+    <h3st></h3st>
+    <p class="post-meta"></p>
   </header>
 
-  <article>
-    <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://rpraveenjain.github.io/">here</a>.</p>
+  <article class="post-content">
+    <hr>
+<h4 id="statement">Statement</h4>
+
+<p>Consider a random variable \(X\) with expectation denoted as \(\mathbb{E}[X]\) and let \(Y\) be another random variable in the same probability space. Then, the law of total expectation states that
+\begin{equation} \nonumber
+\mathbb{E}[X] = \mathbb{E}[\mathbb{E}[X|Y]]
+\end{equation}</p>
+
+<h5 id="proof-continuous-case">Proof: Continuous case</h5>
+<p>Consider the expectation in the left hand side of the above equation
+\begin{equation} \nonumber
+\mathbb{E}[X] = \int x p(x)dx
+\end{equation}
+where \(p(x)\) is the probability density function (pdf) of random variable \(X\). The pdf \(p(x)\) satisfies
+\begin{equation} \nonumber
+p(x) = \int p(x,y)dy
+\end{equation}
+Therefore,</p>
+
+\[\begin{align}
+\mathbb{E}[X] &amp;= \int x p(x)dx \nonumber \\
+&amp;= \int x \left[\int p(x, y) dy\right]dx \nonumber \\
+&amp;= \int x \left[\int p(x|y)p(y)dy\right]dx \nonumber\\
+&amp;= \int \left[\int x p(x|y)dx\right]p(y)dy \nonumber \quad (*) \\
+&amp;= \int \mathbb{E}[X|Y]dy \nonumber \\
+&amp;= \mathbb{E}[\mathbb{E}[X|Y]] \nonumber
+\end{align}\]
+
+<p>(*) The exchange of integrals is a consequence of <a href="https://web.ma.utexas.edu/users/m408m/Display15-2-3.shtml" target="_blank" rel="noopener noreferrer">Fubini’s theorem</a>. Hence the law of total expectations cannot be applied in cases that do not satisfy the conditions of the Fubini’s theorem.</p>
 
   </article>
+
+  
 
 </div>
 
